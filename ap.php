@@ -58,17 +58,17 @@
             <h2>Add Police Detail</h2><br><br>
             <form action="ap.inc.php" method="post" >
             <label for="posid">Station ID *</label>
-            <input type="id" name="posid" value="" ><br><br>
+            <input type="id" name="posid" value="" required><br><br>
             <label for="pname">Name *</label>
-            <input type="text" name="pname" value="" ><br><br>
+            <input type="text" name="pname" value="" required ><br><br>
             <label for="Email">Email</label>
-            <input type="email" id="psname" name="Email" value="" ><br><br>
+            <input type="email" id="psname" name="Email" value="" required ><br><br>
             <label for="mobno">Mobile Number *</label>
-            <input type="number" name="mobno" value="" ><br><br>
+            <input type="number" name="mobno" value="" required><br><br>
             <label for="adrs">Address *</label>
-            <input type="text" name="adrs" value="" ><br><br>
+            <input type="text" name="adrs" value="" required><br><br>
             <label for="pswd">Password *</label>
-            <input type="password" name="pswd" value=""><br><br>
+            <input type="password" name="pswd" value="" required><br><br>
             <input type="submit" name="submitted" value="Add" class='btn'>
             </form> 
         </section>

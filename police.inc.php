@@ -20,8 +20,7 @@
 		if($count == 1)
 		{  
 			$_SESSION["favsport"] = "CRICKET";
-			header("location:policedash.php");  		
-			exit();	
+			header("location:policedash.php");  			
 		}  
 		else{  
 			echo "<script>

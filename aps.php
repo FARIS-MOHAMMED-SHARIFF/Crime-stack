@@ -57,10 +57,10 @@
         <section class='aps'>
             <h2>Add Police Station Detail</h2><br><br>
             <form action="aps.inc.php" method="post">
-            <label for="psname">Police Station Name *</label>
-            <input type="text" id="psname" name="psname" value="" ><br><br>
             <label for="pscode">Police Station Code *</label>
-            <input type="text" id="pscode" name="pscode" value=""><br><br>
+            <input type="text" id="pscode" name="pscode" value="" required ><br><br>
+            <label for="psname">Police Station Name *</label>
+            <input type="text" id="psname" name="psname" value="" required ><br><br>
             <input type="submit" name = "submitted" value="ADD" class='btn'>
             </form> 
         </section>

@@ -36,6 +36,12 @@
         <section class='side-menu'>
             <ul>
                 <li class='current'><i class="fas fa-home"></i><a href="policedash.php">Dashboard</a></li>
+                <!-- <li><i class="fas fa-file-contract"></i><a href="#">Police Station</a>
+                    <ul>
+                        <li><a href="aps.php">Add Police Station</a></li>
+                        <li><a href="manageposstn.php">Manage Police Station</a></li>
+                    </ul>
+                </li> -->
                 <li><i class="fas fa-dungeon"></i><a href="#">Criminals</a>
                     <ul>
                         <li><a href="ac.php">Add Criminal</a></li>
@@ -56,8 +62,9 @@
         </section>
         <section class='aps'>
             <h2>Add Criminal Details</h2><br><br>
-
             <form action="ac.inc.php" method="post" >
+            <!-- <label for="cname"> Name *</label>
+            <input type="text" name="cname" value="" ><br><br> -->
             <label for="fid">FIR NO *</label>
             <input type="number" name="fid" value="" required><br><br>
             <!-- <label for="photo" >Photo *</label>
@@ -69,7 +76,7 @@
             <label for="adrs">Address  *</label>
             <input type="text" name="adrs" value="" ><br><br>
             <label for="cid">Crime ID *</label>
-            <input type="text" name="cid" value=""><br><br>
+            <input type="text" name="cid" value="" required><br><br>
             <label for="offid">OFF ID *</label>
             <input type="number" name="offid" value="" required><br><br>
             <!-- <label for="sid">STN ID *</label>

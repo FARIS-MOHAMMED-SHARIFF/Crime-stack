@@ -22,6 +22,23 @@
         $phno = mysqli_real_escape_string($conn,$phno);
         $address = mysqli_real_escape_string($conn,$address);  
         $password = mysqli_real_escape_string($conn,$password); 
+
+        $sql = "SELECT * FROM `station` where STN_ID= '$psid' ; ";  
+        $result = mysqli_query($conn, $sql);  
+        $row = mysqli_fetch_assoc($result);  
+        $count2 =mysqli_num_rows($result);
+		
+		
+		if($count2 == 0)
+		{  
+            echo "<script>
+            window.location.href='ap.php';
+            alert('Enter a valid Station ID!');
+            </script>";
+            exit(); 			
+		} 
+
+        
         $sql="INSERT INTO `policeofficer`( `OFF_NAME`, `EMAIL`, `PH_NO`, `P_ADD`, `PSWD`, `STN_ID`) VALUES ('$offname','$email','$phno','$address','$password','$psid')";
         $result = mysqli_query($conn, $sql);
         
